@@ -1,0 +1,166 @@
+@import url(https://allfont.net/allfont.css?fonts=pragmatica);
+@font-face {
+  font-family: "Pragmatica-ExtraLight";
+  src: url("Pragmatica-ExtraLight.woff") format("woff");
+  src: url("Pragmatica-ExtraLight.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+@font-face {
+  font-family: "FreightBigPro";
+  src: url("FreightBigPro.woff") format("woff");
+  src: url("FreightBigPro.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+:root {
+  --font-heading-family: 'FreightBigPro', serif;
+  --font-body-family:'Pragmatica', arial; }
+
+@media screen and (min-width: 990px) {
+  .hide-tablet {
+    display: none; } }
+
+@media screen and (max-width: 749px) {
+  .header__heading svg {
+    width: 66px; }
+  .header__heading svg path {
+    fill: #000000; } }
+
+@media screen and (min-width: 749px) {
+  header:not(.color-transparent) .header__heading svg path {
+    fill: #ffffff; } }
+
+svg.icon.icon-cart-empty, svg.icon.icon-cart {
+  width: 20px !important; }
+
+@media screen and (min-width: 750px) {
+  svg.icon.icon-cart-empty path, svg.icon.icon-cart path {
+    stroke: #ffffff; } }
+
+svg.icon.location {
+  height: 20px !important; }
+
+@media screen and (min-width: 750px) {
+  svg.icon.location path {
+    fill: #ffffff; } }
+
+.color-transparent {
+  background: transparent; }
+
+.color-transparent .button {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+  font-size: 10px;
+  line-height: 145%;
+  letter-spacing: 0.1em;
+  --border-opacity:0;
+  --border-offset:0;
+  min-width: calc(15rem + var(--buttons-border-width) * 2); }
+
+.color-transparent .button:hover:after {
+  display: none; }
+
+.shopify-section-header-sticky > .color-transparent {
+  background: #ffffff; }
+
+.shopify-section-header-sticky > .color-transparent .header__icon, .shopify-section-header-sticky > .color-transparent .header__menu-item {
+  color: #000000;
+  text-transform: uppercase; }
+
+@media screen and (min-width: 750px) {
+  .shopify-section-header-sticky svg.icon.icon-cart-empty path, .shopify-section-header-sticky svg.icon.location path, .shopify-section-header-sticky svg.icon.icon-cart path {
+    stroke: #000000; } }
+
+@media screen and (min-width: 750px) {
+  .shopify-section-header-sticky svg.icon.location path {
+    fill: #000000; } }
+
+@media screen and (min-width: 749px) {
+  .shopify-section-header-sticky .header__heading svg path {
+    fill: #000000 !important; } }
+
+.banner__text {
+  max-width: 365px !important; }
+
+.eyebrow__heading {
+  margin-bottom: 0;
+  font-family: "Pragmatica-ExtraLight", sans-serif;
+  font-size: 10px;
+  line-height: 145%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+
+.swatches {
+  width: 20px;
+  height: 20px; }
+
+.card__information .card__heading, .card__information .product-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Pragmatica';
+  font-style: normal;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0; }
+
+.card__information .product-description {
+  font-size: 10px; }
+
+.card__information .collection-title {
+  font-size: 10px;
+  font-family: "Pragmatica-ExtraLight", sans-serif;
+  font-size: 10px;
+  line-height: 145%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #828282; }
+
+.card__information small {
+  font-size: 10px;
+  font-family: "Pragmatica-ExtraLight", sans-serif;
+  letter-spacing: 0.07em;
+  line-height: 145%; }
+
+.card__information .price {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Pragmatica';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px; }
+
+.collection-cards {
+  width: 100%;
+  display: flex; }
+
+@media screen and (max-width: 749px) {
+  .collection-cards {
+    flex-direction: column; } }
+
+.collection-cards .slider-buttons {
+  justify-content: flex-end; }
+
+.collection-cards .slider-buttons .slider-counter {
+  display: none; }
+
+.collection-cards .collection__title {
+  width: calc(100% - var(--grid-desktop-horizontal-spacing) / 2);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+.collection-cards slider-component {
+  width: calc(100% - var(--grid-desktop-horizontal-spacing) / 2); }
+
+@media screen and (min-width: 750px) {
+  .collection-cards .collection__title {
+    width: calc(33.33% - var(--grid-desktop-horizontal-spacing) / 2); }
+  .collection-cards slider-component {
+    width: calc(66.66% - var(--grid-desktop-horizontal-spacing) / 2); } }

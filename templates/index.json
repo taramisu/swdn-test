@@ -1,0 +1,175 @@
+{
+  "sections": {
+    "3ead4890-f726-4f22-9b20-2dbfe328d061": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16223414288623__3ead4890-f726-4f22-9b20-2dbfe328d061-16651583247bef5512-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_12.jpg",
+            "eyebrow": "NEW SEASON",
+            "eyebrow_color": "#ffffff",
+            "heading": "The New Expression of Color",
+            "heading_size": "h1",
+            "heading_color": "#ffffff",
+            "subheading": "Introducing the SS22 collection : harmonious hues and illuminating shades",
+            "subheading_color": "#ffffff",
+            "button_label": "WOMENS",
+            "link": "#",
+            "button_label2": "MENS",
+            "link2": "#",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 30,
+            "color_scheme": "transparent",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "4c3cc6a5-4073-4774-8a1a-cf7b4b186c64": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_12.png",
+            "eyebrow": "NEW SEASON",
+            "eyebrow_color": "#ffffff",
+            "heading": "New Heading",
+            "heading_size": "h1",
+            "heading_color": "#ffffff",
+            "subheading": "Tell your brand's story through images",
+            "subheading_color": "#ffffff",
+            "button_label": "SHOP WOMENS",
+            "link": "#",
+            "button_label2": "",
+            "link2": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "transparent",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16223414288623__3ead4890-f726-4f22-9b20-2dbfe328d061-16651583247bef5512-0",
+        "4c3cc6a5-4073-4774-8a1a-cf7b4b186c64"
+      ],
+      "settings": {
+        "transparent_header": true,
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "16df55ea-2057-4070-992d-c1681b416bb9": {
+      "type": "collection-cards",
+      "settings": {
+        "title": "SPRING 2022",
+        "heading_size": "h2",
+        "description": "<p>They, in the dark found light, brighter than many ever see.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "womens",
+        "button_label": "SHOP WOMENS",
+        "button_link": "shopify:\/\/collections\/womens",
+        "products_to_show": 5,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3eb1fa06-6faa-4423-b2a2-849ba328c5f9": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16646969360623__3eb1fa06-6faa-4423-b2a2-849ba328c5f9-16653621058f987cfa-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "A Tale of Invention",
+            "heading_size": "h2"
+          }
+        },
+        "template--16646969360623__3eb1fa06-6faa-4423-b2a2-849ba328c5f9-16653621058f987cfa-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In 2019 focus shifted. Our goal became not only to change the way we dress, but aso how we percieve the world.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16646969360623__3eb1fa06-6faa-4423-b2a2-849ba328c5f9-16653621058f987cfa-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEARN MORE",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "template--16646969360623__3eb1fa06-6faa-4423-b2a2-849ba328c5f9-16653621058f987cfa-0",
+        "template--16646969360623__3eb1fa06-6faa-4423-b2a2-849ba328c5f9-16653621058f987cfa-1",
+        "template--16646969360623__3eb1fa06-6faa-4423-b2a2-849ba328c5f9-16653621058f987cfa-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/image_12.jpg",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "The New Expression",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "sweden",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "3ead4890-f726-4f22-9b20-2dbfe328d061",
+    "16df55ea-2057-4070-992d-c1681b416bb9",
+    "3eb1fa06-6faa-4423-b2a2-849ba328c5f9",
+    "featured_collection"
+  ]
+}

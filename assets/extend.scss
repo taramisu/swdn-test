@@ -1,0 +1,222 @@
+// Extend.scss
+@import url(https://allfont.net/allfont.css?fonts=pragmatica);
+
+@font-face {
+  font-family: "Pragmatica-ExtraLight";
+  src: url('Pragmatica-ExtraLight.woff') format("woff");
+  src: url('Pragmatica-ExtraLight.woff2') format("woff2");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "FreightBigPro";
+  src: url('FreightBigPro.woff') format("woff");
+  src: url('FreightBigPro.woff2') format("woff2");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+
+// Variables 
+$pragmatica: 'Pragmatica', arial;
+$pragmaticaLight: 'Pragmatica-ExtraLight', sans-serif;
+$freightBig: 'FreightBigPro', arial;
+$uppercase: uppercase;
+$black: #000000;
+$white: #ffffff;
+$desktop: 750px;
+$mobile: 749px;
+$tablet: 990px;
+$xs:479px;
+$transparent: transparent;
+$lineHeight: 145%;
+$letterSpacing: 0.1em;
+
+// Styles
+
+:root{ 
+  --font-heading-family: 'FreightBigPro', serif;
+  --font-body-family:'Pragmatica', arial; 
+}
+@media screen and (min-width: $tablet) {
+  .hide-tablet{
+    display:none;
+  }
+}
+@media screen and (max-width: $mobile) {
+  .header__heading{
+    svg{
+      width:66px;
+      path{
+        fill:$black;
+      }
+    }
+  }
+}
+header:not(.color-transparent){
+  .header__heading{
+    svg{
+      path{
+        @media screen and (min-width: $mobile) {
+          fill:$white;
+        }
+      }
+    }
+  }
+}
+svg.icon.icon-cart-empty, svg.icon.icon-cart {
+  width:20px!important;
+    path{
+    @media screen and (min-width: $desktop) {
+      stroke:$white;
+    }
+  }
+}
+svg.icon.location {
+  height: 20px !important;
+  path{
+    @media screen and (min-width: $desktop) {
+      fill:$white;
+    }
+  }
+}
+.color-transparent{
+  background:$transparent;
+  .button{
+    background:$white;
+    border-color:$white;
+    color:$black;
+    font-size: 10px;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+    --border-opacity:0;
+    --border-offset:0;
+    min-width: calc(15rem + var(--buttons-border-width) * 2);
+    &:hover{
+      &:after{
+        display: none;
+      }
+    }
+  }
+}
+.shopify-section-header-sticky{
+  > .color-transparent{
+    background:$white;
+    .header__icon, .header__menu-item {
+      color: $black;
+      text-transform: $uppercase;
+    }
+  }
+  svg.icon.icon-cart-empty, svg.icon.location, svg.icon.icon-cart {
+    path{
+      @media screen and (min-width: $desktop) {
+        stroke:$black;
+      }
+    }
+  }
+  svg.icon.location {
+    path{
+      @media screen and (min-width: $desktop) {
+        fill:$black;
+      }
+    }
+  }
+  .header__heading{
+    svg{
+      path{
+        @media screen and (min-width: $mobile) {
+          fill:$black!important;
+        }
+      }
+    }
+  }
+}
+.banner__text {
+  max-width: 365px!important;
+}
+.eyebrow__heading {
+  margin-bottom: 0;
+  font-family: $pragmaticaLight;
+  font-size: 10px;
+  line-height: $lineHeight;  
+  text-align: center;
+  letter-spacing: $letterSpacing;
+  text-transform: uppercase;
+}
+.swatches {
+  width: 20px;
+  height: 20px;
+}
+.card__information{
+  .card__heading, .product-description {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0;
+  }
+  .product-description{
+    font-size: 10px;
+  }
+  .collection-title{
+    font-size: 10px;
+    font-family: $pragmaticaLight;
+    font-size: 10px;
+    line-height: $lineHeight;  
+    text-align: center;
+    letter-spacing: $letterSpacing;
+    text-transform: uppercase;
+    color: #828282;
+  }
+  small {
+    font-size: 10px;
+    font-family: $pragmaticaLight;
+    letter-spacing: 0.07em;
+    line-height: $lineHeight; 
+  }
+  .price{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.collection-cards{
+  width: 100%;
+  display: flex;
+  @media screen and (max-width: $mobile) {
+    flex-direction:column;
+  }
+  .slider-buttons{
+    justify-content: flex-end;
+    .slider-counter{
+      display: none;
+    }
+  }
+  .collection__title{
+    width: calc(100% - var(--grid-desktop-horizontal-spacing) / 2);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  slider-component{
+    width: calc(100% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    .collection__title{
+      width: calc(33.33% - var(--grid-desktop-horizontal-spacing) / 2);
+    }
+    slider-component{
+      width: calc(66.66% - var(--grid-desktop-horizontal-spacing) / 2);
+    }
+  }
+}
+
