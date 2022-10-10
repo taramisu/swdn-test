@@ -393,31 +393,32 @@
   </div>
 {%- endif -%}
 <script>
-
     (function atc(){
-    
-      var addData = {
-        'id':{{card_product.selected_or_first_available_variant.id}}, 
-        'quantity':1
-      };
-    
-      fetch('/cart/add.js', {
-        body: JSON.stringify(addData),
-        credentials: 'same-origin',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-Requested-With':'xmlhttprequest' 
-        },
-        method: 'POST'
-      }).then(function(response) {
-        return response.json();
-      }).then(function(json) {
-        /* we have JSON */
-        console.log(`Added ` + {{card_product.selected_or_first_available_variant.id}} + `to cart`)
-      }).catch(function(err) {
-        /* uh oh, we have error. */
-        console.error(err)
-      });
+     
+        const variantId = {{card_product.selected_or_first_available_variant.id}};
+        var addToCart = {
+          'id':variantId, 
+          'quantity':1
+        };
+      
+        fetch('/cart/add.js', {
+          body: JSON.stringify(addToCart),
+          credentials: 'same-origin',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Requested-With':'xmlhttprequest' 
+          },
+          method: 'POST'
+        }).then(function(response) {
+          return response.json();
+        }).then(function(json) {
+          /* we have JSON */
+          console.log(`Added ` + variantId + `to cart`)
+        }).catch(function(err) {
+          /* uh oh, we have error. */
+          console.error(err)
+        });
+        
   })();
 
 </script>
