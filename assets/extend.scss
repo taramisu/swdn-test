@@ -25,7 +25,7 @@ $pragmatica: 'Pragmatica', arial;
 $pragmaticaLight: 'Pragmatica-ExtraLight', sans-serif;
 $freightBig: 'FreightBigPro', arial;
 $uppercase: uppercase;
-$black: #000000;
+$black: #111111;
 $white: #ffffff;
 $desktop: 750px;
 $mobile: 749px;
@@ -193,6 +193,11 @@ svg.icon.location {
   display: flex;
   @media screen and (max-width: $mobile) {
     flex-direction:column;
+  }
+  .button-collection-card{
+    background:transparent;
+    color:$black;
+    margin-top:10px;
   }
   .slider-buttons{
     justify-content: flex-end;

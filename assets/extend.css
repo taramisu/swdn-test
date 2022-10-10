@@ -27,7 +27,7 @@
   .header__heading svg {
     width: 66px; }
   .header__heading svg path {
-    fill: #000000; } }
+    fill: #111111; } }
 
 @media screen and (min-width: 749px) {
   header:not(.color-transparent) .header__heading svg path {
@@ -53,7 +53,7 @@ svg.icon.location {
 .color-transparent .button {
   background: #ffffff;
   border-color: #ffffff;
-  color: #000000;
+  color: #111111;
   font-size: 10px;
   line-height: 145%;
   letter-spacing: 0.1em;
@@ -68,20 +68,20 @@ svg.icon.location {
   background: #ffffff; }
 
 .shopify-section-header-sticky > .color-transparent .header__icon, .shopify-section-header-sticky > .color-transparent .header__menu-item {
-  color: #000000;
+  color: #111111;
   text-transform: uppercase; }
 
 @media screen and (min-width: 750px) {
   .shopify-section-header-sticky svg.icon.icon-cart-empty path, .shopify-section-header-sticky svg.icon.location path, .shopify-section-header-sticky svg.icon.icon-cart path {
-    stroke: #000000; } }
+    stroke: #111111; } }
 
 @media screen and (min-width: 750px) {
   .shopify-section-header-sticky svg.icon.location path {
-    fill: #000000; } }
+    fill: #111111; } }
 
 @media screen and (min-width: 749px) {
   .shopify-section-header-sticky .header__heading svg path {
-    fill: #000000 !important; } }
+    fill: #111111 !important; } }
 
 .banner__text {
   max-width: 365px !important; }
@@ -142,6 +142,11 @@ svg.icon.location {
 @media screen and (max-width: 749px) {
   .collection-cards {
     flex-direction: column; } }
+
+.collection-cards .button-collection-card {
+  background: transparent;
+  color: #111111;
+  margin-top: 10px; }
 
 .collection-cards .slider-buttons {
   justify-content: flex-end; }
